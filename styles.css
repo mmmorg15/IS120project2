@@ -115,7 +115,7 @@ input::placeholder{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    /* gap: 3rem; */
 }
 
 .product-img{
@@ -123,7 +123,7 @@ input::placeholder{
 	background-color: #ddd;
 	overflow: hidden;
     /* border: 5px solid black; */
-    margin: 3rem 0;
+    /* margin: 3rem 0; */
     border-radius: 8px;
 }
 
@@ -222,17 +222,17 @@ input:hover{
 /* Cards */
 
 .card-section{
-    padding: 3rem 0;
+    padding: 2rem 0;
     display: flex;
     flex-wrap: wrap;
     /* border: 3px solid black; */
 }
 
 .card-container{
-    width: 30%;
+    width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 0 20px;
+	/* padding: 0 20px; */
     display: flex;
     flex-wrap: wrap;
     /* border: 3px solid blue; */
@@ -241,7 +241,7 @@ input:hover{
     display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: 2rem;
+	/* gap: 2rem; */
 	width: 100%;
     /* border: 3px solid green; */
 }
