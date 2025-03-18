@@ -18,69 +18,69 @@
 
 </head>
 <body>
-    <div class="nav-grid">
-        <div class="nav1">
-            <header class="gradient sticky top-0 flex-1 z-[100000]"> <!--Tailwind-->
-                <div class="w-full max-w-full flex flex-wrap justify-between text-white text-[1.3rem] p-1"> <!--Container--><!--Tailwind-->
-                    <div class="title-container">
-                        <h1 class="text-3xl">Sanderlanche</h1> <!--Top Left page title-->
-                    </div>
-                            <nav class="nav-links"> <!--Navigation links that grow when you hover over them-->
-                                <a class="hover:scale-120 transition-transform duration-300" href="#">Home</a>
-                                <a class="hover:scale-120 transition-transform duration-300" href="#">Products</a>
-                                <a class="hover:scale-120 transition-transform duration-300" href="#">Warranty</a>
-                                
-                            </nav>
-                            <!-- Icons -->
-                            <div class="icon-container">
-                                <!-- dropdown attached to the magnifying glass with other book options -->
-                                <div class="dropdown">
-                                    <!--Tailwind-->
-                                    <button class="hover:scale-130 transition-transform duration-200"><i class="fa-solid fa-magnifying-glass icons"></i></button>
-                                        <div class="dropdown-content">
-                                            <a href="#">Stormlight Archive</a>
-                                            <a href="#">Mistborn</a>
-                                            <a href="#">Elantris</a>
-                                        </div>
-                                    </div>
-                                <input class="text-white" type="text" placeholder="Search">
-                                <!--Profile and Heart icons-->
-                                <i class="fa-solid fa-user icons hover:scale-130 transition-transform duration-200"></i>
-                                <i class="fa-solid fa-heart icons hover:scale-130 transition-transform duration-200"></i>
-                                
-                            </div>
+    <header class="gradient sticky top-0 flex-1 z-[100000] text-white text-[1.3rem] p-1" >
+        <div class="nav-grid">
+            <div class="nav1">
+                <div class="">
+                    <h1 class="text-3xl">Sanderlanche</h1> <!--Top Left page title-->
                 </div>
-            </header>
+            </div>
+            <div class="nav2">
+                <nav class="nav-links"> <!--Navigation links that grow when you hover over them-->
+                    <a class="hover:scale-120 transition-transform duration-300" href="#">Home</a>
+                    <a class="hover:scale-120 transition-transform duration-300" href="#">Products</a>
+                    <a class="hover:scale-120 transition-transform duration-300" href="#">Warranty</a>
+                </nav>
+            </div>
+            <div class="nav3">
+                <div class="icon-container">
+                    <!-- dropdown attached to the magnifying glass with other book options -->
+                    <div class="dropdown">
+                        <!--Tailwind-->
+                        <button class="hover:scale-130 transition-transform duration-200"><i class="fa-solid fa-magnifying-glass icons"></i></button>
+                            <div class="dropdown-content">
+                                <a href="#">Stormlight Archive</a>
+                                <a href="#">Mistborn</a>
+                                <a href="#">Elantris</a>
+                            </div>
+                        </div>
+                    <input class="text-white" type="text" placeholder="Search">
+                    <!--Profile and Heart icons-->
+                    <i class="fa-solid fa-user icons hover:scale-130 transition-transform duration-200"></i>
+                    <i class="fa-solid fa-heart icons hover:scale-130 transition-transform duration-200"></i>
+                </div>
+            </div>
         </div>
-    </div>
+</header>
 
     
     <div class="main-grid">
-        <div class="main1 product-container">
+        <div class="main1 product-container radius">
             <!-- <img src="./wayofkings.jpg" alt="Cover of the Book The Way of Kings"> -->
             <!-- I either need to put the picture in the css or right here. Figure out sizing. -->
         </div>
         <div class="main2">
             <h1 class="text-3xl">THE WAY OF KINGS</h1> 
-            <div>$29.99</div>
+            <div class=" border-b-[3px] border-black">$29.99</div>
         </div>
         <div class="main3">
             <li>Genre: Epic Fantasy</li>
             <li>Published: August 31, 2010</li>
             <li>Setting: The book takes place on the planet Roshar, a world frequently ravaged by violent storms. The society is shaped by these storms, and different cultures have adapted unique ways to survive.</li>
             <li>Plot: The story follows multiple characters, but primarily focuses on Kaladin Stormblessed, a soldier with a troubled past, and Dalinar Kholin, a nobleman wrestling with visions that hint at ancient threats.</li>
+            <hr>
                 The Way of Kings by Brandon Sanderson is an epic fantasy adventure set in the storm-ravaged world of Roshar. It follows a cast of unforgettable characters, including a disgraced soldier-turned-slave, a scholar with secrets, and a nobleman struggling to do the right thing in a corrupt world.
         </div>
 
-        <div class="main4">
+        <div class="main4 radius">
             <!-- <img title="Bridge run" src="./bridgerun.jgp.jpg" alt="A group of men holding a bridge over their heads."> -->
         </div>
 
-        <div class="main5">
+        <div class="main5 radius">
             <!-- <img title="Kaladin" src="./kaladin.jpg" alt=" Kaladin looking at a glowing blue spirit"> -->
         </div>
 
-        <div class="main6">
+        <div class="main6 radius">
             <!-- <img title="Shardblade" src="./knightkaladin.jpg" alt="a man holding a glowing sword"> -->
         </div>
 
