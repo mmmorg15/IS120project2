@@ -14,50 +14,63 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=MedievalSharp&family=Monda:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=MedievalSharp&
+    family=Monda:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Twinkle+Star&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
-    <header class="gradient sticky top-0 flex-1 z-[100000] text-white text-[1.3rem] p-1" >
-        <div class="nav-grid">
-            <div class="nav1">
-                <div class="">
-                    <h1 class="text-3xl">Sanderlanche</h1> <!--Top Left page title-->
+    <header class="gradient sticky top-0 flex-1 z-[100000] text-white text-[1.3rem]" >
+        <nav role="navigation">
+            <div class="nav-grid gradient">
+                <div class="nav1">
+                    <div>
+                        <h1 class="text-3xl text-white">Sanderlanche</h1>
+                    </div>
+                    <div class="hamburger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
                 </div>
-            </div>
-            <div class="nav2">
-                <nav class="nav-links"> <!--Navigation links that grow when you hover over them-->
-                    <a class="hover:scale-120 transition-transform duration-300" href="#">Home</a>
-                    <a class="hover:scale-120 transition-transform duration-300" href="#">Products</a>
-                    <a class="hover:scale-120 transition-transform duration-300" href="#">Warranty</a>
-                </nav>
-            </div>
-            <div class="nav3">
-                <div class="icon-container">
-                    <!-- dropdown attached to the magnifying glass with other book options -->
-                    <div class="dropdown">
-                        <!--Tailwind-->
-                        <button class="hover:scale-130 transition-transform duration-200"><i class="fa-solid fa-magnifying-glass icons"></i></button>
-                            <div class="dropdown-content">
-                                <a href="#">Stormlight Archive</a>
-                                <a href="#">Mistborn</a>
-                                <a href="#">Elantris</a>
-                            </div>
-                        </div>
-                    <input class="text-white" type="text" placeholder="Search">
-                    <!--Profile and Heart icons-->
-                    <i class="fa-solid fa-user icons hover:scale-130 transition-transform duration-200"></i>
-                    <i class="fa-solid fa-heart icons hover:scale-130 transition-transform duration-200"></i>
-                </div>
-            </div>
-        </div>
-</header>
+                <div class="nav-menu">
+                    <div class="nav2">
+                        <nav class="nav-links">
+                            <a class="hover:scale-120 transition-transform duration-300" href="#top">Home</a>
+                            <a class="hover:scale-120 transition-transform duration-300" href="#cards">Cards</a>
+                            <a class="hover:scale-120 transition-transform duration-300" href="#video">Video</a>
+                            <a class="hover:scale-120 transition-transform duration-300" href="#connect">Connect</a>
 
-    
-    <div class="main-grid">
-        <div class="main1 product-container radius">
-            <!-- <img src="./wayofkings.jpg" alt="Cover of the Book The Way of Kings"> -->
-            <!-- I either need to put the picture in the css or right here. Figure out sizing. -->
+                        </nav>
+                    </div>
+                    <div class="nav3">
+                        <div class="icon-container">
+                            <!-- <div class="dropdown relative">
+                                <button class="hover:scale-130 transition-transform duration-200 text-white">
+                                    <i class="fa-solid fa-magnifying-glass icons"></i>
+                                </button>
+                                <div class="dropdown-content text-white">
+                                    <a href="#">Stormlight Archive</a>
+                                    <a href="#">Mistborn</a>
+                                    <a href="#">Elantris</a>
+                                </div>
+                            </div> -->
+                            <input class="text-white px-2 py-1 rounded w-32" type="text" placeholder="Search">
+                            <i class="fa-solid fa-user icons hover:scale-130 transition-transform duration-200 text-white"></i>
+                            <i class="fa-solid fa-heart icons hover:scale-130 transition-transform duration-200 text-white"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+<main>
+    <div role="Display product image and description" class="main-grid">
+        <div class="main1 product-container radius"> 
         </div>
         <div class="main2">
             <h1 class="text-3xl">THE WAY OF KINGS</h1> 
@@ -72,33 +85,24 @@
                 The Way of Kings by Brandon Sanderson is an epic fantasy adventure set in the storm-ravaged world of Roshar. It follows a cast of unforgettable characters, including a disgraced soldier-turned-slave, a scholar with secrets, and a nobleman struggling to do the right thing in a corrupt world.
         </div>
 
-        <div class="main4 radius">
-            <!-- <img title="Bridge run" src="./bridgerun.jgp.jpg" alt="A group of men holding a bridge over their heads."> -->
+        <div aria-label="A group of men holding a bridge over their heads." class="main4 radius swirl-in-fwd">
+            
         </div>
 
-        <div class="main5 radius">
-            <!-- <img title="Kaladin" src="./kaladin.jpg" alt=" Kaladin looking at a glowing blue spirit"> -->
+        <div aria-label="Kaladin looking at a glowing blue spirit" class="main5 radius swirl-in-fwd2">
         </div>
 
-        <div class="main6 radius">
-            <!-- <img title="Shardblade" src="./knightkaladin.jpg" alt="a man holding a glowing sword"> -->
+        <div aria-label="A man holding a glowing sword" class="main6 radius swirl-in-fwd3">
         </div>
 
     </div>
 
 
-    <div class="card-grid">
+    <div  id="cards"  role="Display trading cards and their info" class="card-grid">
         <div class="card1">
             <div class="divider gradient text-white">
-                <!--Tailwind-->
-                <div class="flex flex-col flex-wrap justify-center items-center w-4/5 gap-4"> <!--divider-text-container-->
+                <div class="flex flex-col flex-wrap justify-center items-center w-4/5 gap-4">
                     <h1 class="text-3xl justify-center">SIGN UP FOR FREE TRADING CARDS!</h1>
-                    <!-- <div class="inputs">
-                        <input type="text" placeholder="Enter your first name">
-                        <input type="text" placeholder="Enter your last name">
-                        <input type="text" placeholder="Enter your email">
-                        <input type="text" placeholder="Enter your phone #">
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -110,7 +114,7 @@
                             <img src="./whitespine.jpg" alt="A whitespine (predatory animal)"></div>
                             <div class="card-content">
                                 <h3 class="card-title underline">WHITESPINE</h3>
-                                <p>Whitespines are apex predators that live on Roshar. They are large, carapaced animals with sharp tusks, spikes, and mandibles.</p>
+                                <p>Whitespines are apex predators that live on Roshar. They are large, carapaced animals with sharp tusks and spikes.</p>
                                 <div class="card-button-layout">
                                     <button class="card-button">Learn More</button>
                                 </div>
@@ -154,80 +158,27 @@
             </div>
         </div>
     </div>
-    <div class="vide0-grid">
-        <div class="video1">
+    <div class="">
+        <div  id="video">
             <div class="youtube-container gradient">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/tFSjj3jiTfo?si=lwGeMpexliwul4IV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
-        <div class="video2">
-            <div class="big-footer-container">
-                <div class="footer-container ">
-                    <div class="footer-section">
-                        <h1>Menu</h1>
-                            <ul> <!--SVG images with Moving elements-->
-                                <li class="flex flex-wrap hover:scale-110 transition-transform duration-75"><svg width="25" height="30" viewBox="0 0 100 50">
-                                    <polygon points="70,25 30,10 30,40" fill="black" class="arrow" />
-                                </svg>
-                                <!--Return to Top button-->
-                                <a href="#top">Return to top</a>
-                                <svg width="25" height="30" viewBox="0 0 100 50">
-                                    <polygon points="30,25 70,10 70,40" fill="black" class="arrow" />
-                                </svg></li>
-                                
-                                <li>Store</li>
-                                <li>Series</li>
-                            </ul>
-                    </div>
-                    <div class="footer-section">
-                        <h1>Support</h1>
-                            <ul>
-                                <li>Track your order</li>
-                                <li>Questions</li>
-                                <li>Shipping</li>
-                            </ul>
-                    </div>
-                    <div class="footer-section">
-                        <h1>Special Offers</h1>
-                            <ul>
-                                <li>Sales</li>
-                                <li>Bundles</li>
-                                <li>New Releases</li>
-                            </ul>
-                    </div>
-                    <!--Social Media Icons-->
-                    <div class="footer-section ">
-                        <h1>Connect with us</h1>
-                            <ul class="flex text-3xl gap-7 items-center">
-                                <i class="fa-brands fa-facebook"></i>
-                                <i class="fa-brands fa-instagram"></i>
-                                <i class="fa-brands fa-square-x-twitter"></i>
-                                <i class="fa-brands fa-tiktok"></i>
-                            </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
-
+</main>
+<footer>
     <div class="footer-grid">
         <div class="footer1">
             <h1>Menu</h1>
-            <ul> <!--SVG images with Moving elements-->
-                <li class="flex flex-wrap hover:scale-110 transition-transform duration-75"><svg width="25" height="30" viewBox="0 0 100 50">
-                    <polygon points="70,25 30,10 30,40" fill="black" class="arrow" />
-                </svg>
-                <!--Return to Top button-->
-                <a href="#top">Return to top</a>
-                <svg width="25" height="30" viewBox="0 0 100 50">
-                    <polygon points="30,25 70,10 70,40" fill="black" class="arrow" />
-                </svg></li>
+            <ul> 
+                <li class="flex flex-wrap hover:scale-110 transition-transform duration-75">
+                <a href="#top" class="nav-link">Return to top</a>
                 
                 <li>Store</li>
-                <li>Series</li>
+                <li class="nav-link"><a href="https://roshar.17thshard.com/#/en-US">Interactive Map</a></li>
             </ul>
         </div>
-        <div class="footer2">
+        <div  class="footer2">
             <h1>Support</h1>
             <ul>
                 <li>Track your order</li>
@@ -236,7 +187,7 @@
             </ul>
         </div>
         <div class="footer3">
-            <h1>Special Offers</h1>
+            <h1">Special Offers</h1>
             <ul>
                 <li>Sales</li>
                 <li>Bundles</li>
@@ -244,7 +195,7 @@
             </ul>
         </div>
         <div class="footer4">
-            <h1>Connect with us</h1>
+            <h1 id="connect" >Connect with us</h1>
                             <ul class="flex text-3xl gap-7 items-center">
                                 <i class="fa-brands fa-facebook"></i>
                                 <i class="fa-brands fa-instagram"></i>
@@ -253,6 +204,27 @@
                             </ul>
         </div>
         </div>
+</footer>
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
 
+    // Toggle menu on hamburger click
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (event) => {
+        const isClickInsideMenu = navMenu.contains(event.target);
+        const isClickOnHamburger = hamburger.contains(event.target);
+
+        if (!isClickInsideMenu && !isClickOnHamburger && navMenu.classList.contains('active')) {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }
+    });
+</script>
 </body>
 </html>

@@ -41,37 +41,37 @@ tasks. No student will receive more than 100% on the project.
 Task Breakdown
 
 Required Tasks (up to 35 points)
-[10pts] Full mobile responsivity through media queries and flexible layouts
+<!-- [10pts] Full mobile responsivity through media queries and flexible layouts
 to ensure the site looks good on mobile, tablet, and desktop viewports
-[8pts] Strategic use of CSS Grid for at least one major section of your page
+[8pts] Strategic use of CSS Grid for at least one major section of your page -->
 [7pts] Implementation of at least 2 CSS animations (transitions, keyframes,
-or transform properties)
-[5pts] Meet all requirements from the HTML Semantics Checklist found here
-[3pts] Create at least one accessible component (form, navigation, etc.)
-using ARIA roles and other accessibility best practices
+or transform properties) (Hamburger, )
+<!-- [5pts] Meet all requirements from the HTML Semantics Checklist found here -->
+<!-- [3pts] Create at least one accessible component (form, navigation, etc.)
+using ARIA roles and other accessibility best practices -->
 [2pts] Initialize a new Git repository for the project (or continue with your
 Project 1 repository), make regular commits to show your progress, and have
 your website live on GitHub Pages
 
 Optional Tasks (up to 20 points)
 
-[8pts] Create a responsive navigation menu that converts to a hamburger
-menu on mobile devices
-[6pts] Two instances of using a tool or skill that was taught by your peers in
-our UTD presentations (3pts each)
+<!-- [8pts] Create a responsive navigation menu that converts to a hamburger
+menu on mobile devices -->
+<!-- [6pts] Two instances of using a tool or skill that was taught by your peers in
+our UTD presentations (3pts each) (Animista, Gradient) -->
 [5pts] Include a parallax scrolling effect
 [5pts] Implement auto-filling or auto-fitting grid layouts with
 grid-template-columns: repeat(auto-fill, minmax(size, 1fr))
-[4pts] Implement CSS Grid template areas for your page layout and use
-them to reorganize content at different breakpoints
+<!-- [4pts] Implement CSS Grid template areas for your page layout and use
+them to reorganize content at different breakpoints -->
 [4pts] Create and implement a dark mode toggle using CSS custom
 properties (variables)
-[2pts] Implement a "sticky" element that uses position: sticky
+<!-- [2pts] Implement a "sticky" element that uses position: sticky -->
 [2pts] Use the CSS object-fit property to handle responsive images elegantly
 [2pts] Use CSS Grid's named lines feature to create a complex layout
-[2pts] Implement smooth scrolling behavior site-wide or for specific
-elements
-[1pts] Use CSS gap property effectively with both Grid and Flexbox layouts
+<!-- [2pts] Implement smooth scrolling behavior site-wide or for specific
+elements -->
+<!-- [1pts] Use CSS gap property effectively with both Grid and Flexbox layouts -->
 [1pt] Add custom focus states to interactive elements for keyboard
 accessibility
 
