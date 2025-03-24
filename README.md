@@ -45,7 +45,7 @@ Required Tasks (up to 35 points)
 to ensure the site looks good on mobile, tablet, and desktop viewports
 [8pts] Strategic use of CSS Grid for at least one major section of your page -->
 [7pts] Implementation of at least 2 CSS animations (transitions, keyframes,
-or transform properties) (Hamburger, )
+or transform properties) ()
 <!-- [5pts] Meet all requirements from the HTML Semantics Checklist found here -->
 <!-- [3pts] Create at least one accessible component (form, navigation, etc.)
 using ARIA roles and other accessibility best practices -->

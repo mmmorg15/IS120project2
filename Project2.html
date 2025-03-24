@@ -31,11 +31,11 @@
                     <div>
                         <h1 class="text-3xl text-white">Sanderlanche</h1>
                     </div>
-                    <div class="hamburger">
+                    <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
                         <div class="line1"></div>
                         <div class="line2"></div>
                         <div class="line3"></div>
-                    </div>
+                    </button>
                 </div>
                 <div class="nav-menu">
                     <div class="nav2">
@@ -59,7 +59,7 @@
                                     <a href="#">Elantris</a>
                                 </div>
                             </div> -->
-                            <input class="text-white px-2 py-1 rounded w-32" type="text" placeholder="Search">
+                            <input class="text-white px-2 py-1 rounded w-32" type="text" placeholder="Search" aria-label="Search">
                             <i class="fa-solid fa-user icons hover:scale-130 transition-transform duration-200 text-white"></i>
                             <i class="fa-solid fa-heart icons hover:scale-130 transition-transform duration-200 text-white"></i>
                         </div>
@@ -116,7 +116,7 @@
                                 <h3 class="card-title underline">WHITESPINE</h3>
                                 <p>Whitespines are apex predators that live on Roshar. They are large, carapaced animals with sharp tusks and spikes.</p>
                                 <div class="card-button-layout">
-                                    <button class="card-button">Learn More</button>
+                                    <button class="card-button" aria-label="Learn more about Whitespine">Learn More</button>
                                 </div>
                             </div>
                     </div>
@@ -133,7 +133,7 @@
                                 <h3 class="card-title underline">THUNDERCLAST</h3>
                                 <p>Thunderclasts are enormous stone beasts, easily five or six times larger than a person, approximately 30 feet tall.</p>
                                 <div class="card-button-layout">
-                                    <button class="card-button">Learn More</button>
+                                    <button class="card-button" aria-label="Learn more about Thunderclast">Learn More</button>
                                 </div>
                             </div>
                     </div>
@@ -150,7 +150,7 @@
                                 <h3 class="card-title underline">CHULL</h3>
                                 <p>Mature chulls are massive hexapodal crustaceans with thick legs with large claws and a stone-like shell. </p>
                                 <div class="card-button-layout">
-                                    <button class="card-button">Learn More</button>
+                                    <button class="card-button" aria-label="Learn more about Chull">Learn More</button>
                                 </div>
                             </div>
                     </div>
@@ -164,6 +164,14 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/tFSjj3jiTfo?si=lwGeMpexliwul4IV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
+    </div>
+    <div class="grid-container">
+        <img src="./kaladin.jpg" alt="Image 1">
+        <img src="./kaladin.jpg" alt="Image 2">
+        <img src="./kaladin.jpg" alt="Image 3">
+        <img src="./kaladin.jpg" alt="Image 4">
+        <img src="./kaladin.jpg" alt="Image 5">
+        <img src="./kaladin.jpg" alt="Image 6">
     </div>
 </main>
 <footer>
@@ -196,12 +204,12 @@
         </div>
         <div class="footer4">
             <h1 id="connect" >Connect with us</h1>
-                            <ul class="flex text-3xl gap-7 items-center">
-                                <i class="fa-brands fa-facebook"></i>
-                                <i class="fa-brands fa-instagram"></i>
-                                <i class="fa-brands fa-square-x-twitter"></i>
-                                <i class="fa-brands fa-tiktok"></i>
-                            </ul>
+            <ul class="flex text-3xl gap-7 items-center">
+                <li><a href="https://www.facebook.com/DragonsteelBooks/" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/dragonsteelbooks/?hl=en" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://x.com/DragonsteelBook?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" aria-label="Twitter"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                <li><a href="https://www.tiktok.com/@dragonsteelbooks" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+            </ul>
         </div>
         </div>
 </footer>
@@ -209,8 +217,9 @@
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
 
-    // Toggle menu on hamburger click
     hamburger.addEventListener('click', () => {
+        const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+        hamburger.setAttribute('aria-expanded', !isExpanded);
         hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
     });
@@ -221,6 +230,7 @@
         const isClickOnHamburger = hamburger.contains(event.target);
 
         if (!isClickInsideMenu && !isClickOnHamburger && navMenu.classList.contains('active')) {
+            hamburger.setAttribute('aria-expanded', 'false');
             hamburger.classList.remove('active');
             navMenu.classList.remove('active');
         }
