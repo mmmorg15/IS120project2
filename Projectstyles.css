@@ -15,6 +15,7 @@ body {
     
 }
 
+/* Round the edges */
 .radius{
     border-radius: 1rem;
 }
@@ -148,7 +149,7 @@ body {
     transform: rotate(-45deg) translate(7px, -7px);
 }
 
-/* Media query for screens smaller than 880px */
+/* Media query  */
 @media (max-width: 880px) {
     .hamburger {
         display: flex;
@@ -194,6 +195,7 @@ body {
     }
 }
 
+/* Main big grid with product photo and info */
 .main-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -324,6 +326,8 @@ body {
             font-style: normal;
         }
     
+
+/* Grid with Cards and divider */
 .card-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -381,7 +385,7 @@ body {
             .card4 { grid-area: 4 / 1 / 5 / 2; }
     }
 
-
+/* I think I got rid of this */
 .video-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -402,6 +406,8 @@ body {
     }
     @media (max-width: 480px){}
 
+
+/* Grid template areas */
 .footer-grid {
     display: grid;
             grid-template-areas:
@@ -527,7 +533,7 @@ transform: translateZ(0) rotateX(0);
 
 
 /* background */
-.kenburns-top {
+/* .kenburns-top {
 	-webkit-animation: kenburns-top 5s ease-out both;
 	animation: kenburns-top 5s ease-out both;
 }
@@ -558,7 +564,7 @@ transform: translateZ(0) rotateX(0);
     -webkit-transform-origin: top;
             transform-origin: top;
 }
-}
+} */
 
 
 
@@ -778,6 +784,7 @@ transition: width 0.3s ease;
 width: 100%;
 }
 
+/* Dark Mode */
 @media (prefers-color-scheme: dark) {
 body {
     background-color: black;
@@ -799,6 +806,7 @@ body {
     margin-right: 1rem;
 }
 
+/* Flip the Card */
 .flip-container {
     perspective: 1000px; /* Sets up 3D space for the flip effect */
     position: relative;
@@ -864,6 +872,7 @@ body {
 }
 
 
+/* Everything Fade in when the page loads */
 @keyframes fadeIn {
 from {
     opacity: 0;

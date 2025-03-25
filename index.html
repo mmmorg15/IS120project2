@@ -23,15 +23,17 @@
 
 
 </head>
-<body class="fade-in">
+<body class="fade-in"> <!--Transition Fade in-->
+    <!--HTML Semantics-->
     <header class="gradient sticky top-0 flex-1 z-[100000] text-white text-[1.3rem]" >
         <nav role="navigation">
-            <div class="nav-grid gradient">
+            <div class="nav-grid gradient"> <!--Gradient UTD--><!--Grid-->
                 <div class="nav1">
                     <div>
                         <h1 class="text-3xl text-white">Sanderlanche</h1>
                     </div>
-                    <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <!--Hamburger Menu-->
+                    <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false"> <!--ARIA-->
                         <div class="line1"></div>
                         <div class="line2"></div>
                         <div class="line3"></div>
@@ -40,6 +42,7 @@
                 <div class="nav-menu">
                     <div class="nav2">
                         <nav class="nav-links">
+                            <!--Links that take to to certain places on the screen-->
                             <a class="hover:scale-120 transition-transform duration-300" href="#top">Home</a>
                             <a class="hover:scale-120 transition-transform duration-300" href="#cards">Cards</a>
                             <a class="hover:scale-120 transition-transform duration-300" href="#video">Video</a>
@@ -59,6 +62,8 @@
                                     <a href="#">Elantris</a>
                                 </div>
                             </div> -->
+
+                            <!--ARIA-->
                             <input class="text-white px-2 py-1 rounded w-32" type="text" placeholder="Search" aria-label="Search">
                             <i class="fa-solid fa-user icons hover:scale-130 transition-transform duration-200 text-white"></i>
                             <i class="fa-solid fa-heart icons hover:scale-130 transition-transform duration-200 text-white"></i>
@@ -68,8 +73,9 @@
             </div>
         </nav>
     </header>
-<main>
-    <div role="Display product image and description" class="main-grid">
+<main><!--HTML Semantics-->
+    <!--ARIA ROLE-->
+    <div role="Display product image and description" class="main-grid"> <!--Grid-->
         <div class="main1 product-container radius"> 
         </div>
         <div class="main2">
@@ -85,6 +91,7 @@
                 The Way of Kings by Brandon Sanderson is an epic fantasy adventure set in the storm-ravaged world of Roshar. It follows a cast of unforgettable characters, including a disgraced soldier-turned-slave, a scholar with secrets, and a nobleman struggling to do the right thing in a corrupt world.
         </div>
 
+        <!--ARIA-->
         <div aria-label="A group of men holding a bridge over their heads." class="main4 radius swirl-in-fwd">
             
         </div>
@@ -165,6 +172,7 @@
             </div>
         </div>
     </div>
+    <!--Animation (The cards flip when you click on them)(grid-template-columns: repeat(auto-fill, minmax(size, 1fr)))-->
     <div class="grid-container">
         <div class="flip-container radius">
             <div class="flipper">
@@ -229,12 +237,12 @@
     </div>
 </main>
 <footer>
-    <div class="footer-grid">
+    <div class="footer-grid"> <!--Grid template areas-->
         <div class="footer1">
             <h1 class="font-bold">Menu</h1>
             <ul> 
                 <li class="flex flex-wrap hover:scale-110 transition-transform duration-75">
-                <a href="#top" class="nav-link">Return to top</a>
+                <a href="#top" class="nav-link">Return to top</a> <!--Animation And smooth scrolling-->
                 
                 <li>Store</li>
                 <li class="nav-link"><a href="https://roshar.17thshard.com/#/en-US">Interactive Map</a></li>
@@ -266,8 +274,9 @@
             </ul>
         </div>
         </div>
-</footer>
-<script>
+</footer> <!--HTML Semantics-->
+<!--hamburger JavaScript-->
+<script> 
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
 
