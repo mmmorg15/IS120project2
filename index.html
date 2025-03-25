@@ -3,110 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TWOK</title>
-    <!--Favicon-->
+    <title>Project 2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Projectstyles.css">
+
     <link rel="icon" type="image/png" href="./book.png">
 
-    <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/13524500a8.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=MedievalSharp&family=Monda:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=MedievalSharp&
+    family=Monda:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Twinkle+Star&display=swap" rel="stylesheet">
+
+
 </head>
-<body id="top" class="bg-slate-100 ">
-    <!-- Navigation -->
-    <header class="gradient sticky top-0 flex-1 z-[100000]"> <!--Tailwind-->
-        <div class="w-full max-w-full flex flex-wrap justify-between text-white text-[1.3rem] p-1"> <!--Container--><!--Tailwind-->
-            <div class="title-container">
-                <h1 class="text-3xl">Sanderlanche</h1> <!--Top Left page title-->
-            </div>
-                    <nav class="nav-links"> <!--Navigation links that grow when you hover over them-->
-                        <a class="hover:scale-120 transition-transform duration-300" href="#">Home</a>
-                        <a class="hover:scale-120 transition-transform duration-300" href="#">Products</a>
-                        <a class="hover:scale-120 transition-transform duration-300" href="#">Warranty</a>
-                        
-                    </nav>
-                    <!-- Icons -->
-                    <div class="icon-container">
-                        <!-- dropdown attached to the magnifying glass with other book options -->
-                        <div class="dropdown">
-                            <!--Tailwind-->
-                            <button class="hover:scale-130 transition-transform duration-200"><i class="fa-solid fa-magnifying-glass icons"></i></button>
-                                <div class="dropdown-content">
+<body class="fade-in">
+    <header class="gradient sticky top-0 flex-1 z-[100000] text-white text-[1.3rem]" >
+        <nav role="navigation">
+            <div class="nav-grid gradient">
+                <div class="nav1">
+                    <div>
+                        <h1 class="text-3xl text-white">Sanderlanche</h1>
+                    </div>
+                    <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </button>
+                </div>
+                <div class="nav-menu">
+                    <div class="nav2">
+                        <nav class="nav-links">
+                            <a class="hover:scale-120 transition-transform duration-300" href="#top">Home</a>
+                            <a class="hover:scale-120 transition-transform duration-300" href="#cards">Cards</a>
+                            <a class="hover:scale-120 transition-transform duration-300" href="#video">Video</a>
+                            <a class="hover:scale-120 transition-transform duration-300" href="#connect">Connect</a>
+
+                        </nav>
+                    </div>
+                    <div class="nav3">
+                        <div class="icon-container">
+                            <!-- <div class="dropdown relative">
+                                <button class="hover:scale-130 transition-transform duration-200 text-white">
+                                    <i class="fa-solid fa-magnifying-glass icons"></i>
+                                </button>
+                                <div class="dropdown-content text-white">
                                     <a href="#">Stormlight Archive</a>
                                     <a href="#">Mistborn</a>
                                     <a href="#">Elantris</a>
                                 </div>
-                            </div>
-                        <input class="text-white" type="text" placeholder="Search">
-                        <!--Profile and Heart icons-->
-                        <i class="fa-solid fa-user icons hover:scale-130 transition-transform duration-200"></i>
-                        <i class="fa-solid fa-heart icons hover:scale-130 transition-transform duration-200"></i>
-                        
+                            </div> -->
+                            <input class="text-white px-2 py-1 rounded w-32" type="text" placeholder="Search" aria-label="Search">
+                            <i class="fa-solid fa-user icons hover:scale-130 transition-transform duration-200 text-white"></i>
+                            <i class="fa-solid fa-heart icons hover:scale-130 transition-transform duration-200 text-white"></i>
+                        </div>
                     </div>
-        </div>
+                </div>
+            </div>
+        </nav>
     </header>
+<main>
+    <div role="Display product image and description" class="main-grid">
+        <div class="main1 product-container radius"> 
+        </div>
+        <div class="main2">
+            <h1 class="text-3xl">THE WAY OF KINGS</h1> 
+            <div class=" border-b-[3px] border-black">$29.99</div>
+        </div>
+        <div class="main3">
+            <li>Genre: Epic Fantasy</li>
+            <li>Published: August 31, 2010</li>
+            <li>Setting: The book takes place on the planet Roshar, a world frequently ravaged by violent storms. The society is shaped by these storms, and different cultures have adapted unique ways to survive.</li>
+            <li>Plot: The story follows multiple characters, but primarily focuses on Kaladin Stormblessed, a soldier with a troubled past, and Dalinar Kholin, a nobleman wrestling with visions that hint at ancient threats.</li>
+            <hr>
+                The Way of Kings by Brandon Sanderson is an epic fantasy adventure set in the storm-ravaged world of Roshar. It follows a cast of unforgettable characters, including a disgraced soldier-turned-slave, a scholar with secrets, and a nobleman struggling to do the right thing in a corrupt world.
+        </div>
 
-    <main>
-        <!-- Product Section with image -->
-        <section class="product-container">
-            <div class="product-img">
-                <img src="./wayofkings.jpg" alt="Cover of the Book The Way of Kings">
-            </div>
-            <aside class="aside-container">
-                <!--Tailwind-->
-                <div class="flex flex-wrap  flex-col border-b-2 "><!-- Product Title -->
-                    <h1 class="text-3xl m-2 ">THE WAY OF KINGS</h1> 
-                    <div>$29.99</div>
-                </div>
-
-                <div class="list-box"> <!--Content for product (list with basic info)-->
-                        <li>Genre: Epic Fantasy</li>
-                        <li>Published: August 31, 2010</li>
-                        <li>Setting: The book takes place on the planet Roshar, a world frequently ravaged by violent storms. The society is shaped by these storms, and different cultures have adapted unique ways to survive.</li>
-                        <li>Plot: The story follows multiple characters, but primarily focuses on Kaladin Stormblessed, a soldier with a troubled past, and Dalinar Kholin, a nobleman wrestling with visions that hint at ancient threats.</li>
-                    
-                </div>
-                <!--Brief Summary of Book-->
-                <div class="aside-main-text">The Way of Kings by Brandon Sanderson is an epic fantasy adventure set in the storm-ravaged world of Roshar. It follows a cast of unforgettable characters, including a disgraced soldier-turned-slave, a scholar with secrets, and a nobleman struggling to do the right thing in a corrupt world.</div>
-
-                <div class="mini-product">
-                    <!--Pictures inside of product description. Include Tooltips that explain what each picure contains-->
-                    <img title="Bridge run" src="./bridgerun.jgp.jpg" alt="A group of men holding a bridge over their heads.">
-                    <img title="Kaladin" src="./kaladin.jpg" alt=" Kaladin looking at a glowing blue spirit">
-                    <img title="Shardblade" src="./knightkaladin.jpg" alt="a man holding a glowing sword">
-                </div>
-
-
+        <div aria-label="A group of men holding a bridge over their heads." class="main4 radius swirl-in-fwd">
             
-            </aside>
-                    
+        </div>
 
-        </section>
+        <div aria-label="Kaladin looking at a glowing blue spirit" class="main5 radius swirl-in-fwd2">
+        </div>
 
-        <!-- Page Divider Section With input boxes -->
-        <section>
-            <!--UTD presentation use. Gradients-->
-            <!--Tailwind-->
+        <div aria-label="A man holding a glowing sword" class="main6 radius swirl-in-fwd3">
+        </div>
+
+    </div>
+
+
+    <div  id="cards"  role="Display trading cards and their info" class="card-grid">
+        <div class="card1">
             <div class="divider gradient text-white">
-                <!--Tailwind-->
-                <div class="flex flex-col flex-wrap justify-center items-center w-4/5 gap-4"> <!--divider-text-container-->
-                    <h1 class="text-6xl">SIGN UP FOR FREE TRADING CARDS!</h1>
-                    <div class="inputs">
-                        <input type="text" placeholder="Enter your first name">
-                        <input type="text" placeholder="Enter your last name">
-                        <input type="text" placeholder="Enter your email">
-                        <input type="text" placeholder="Enter your phone #">
-                    </div>
+                <div class="flex flex-col flex-wrap justify-center items-center w-4/5 gap-4">
+                    <h1 class="text-3xl justify-center">SIGN UP FOR FREE TRADING CARDS!</h1>
                 </div>
             </div>
-
-        </section>
-        
-        <!-- Card with images section -->
-        <section class="card-section">
+        </div>
+        <div class="card2">
             <div class="card-container">
                 <div class="product-cards">
                     <div class="card">
@@ -114,14 +114,16 @@
                             <img src="./whitespine.jpg" alt="A whitespine (predatory animal)"></div>
                             <div class="card-content">
                                 <h3 class="card-title underline">WHITESPINE</h3>
-                                <p>Whitespines are apex predators that live on Roshar. They are large, carapaced animals with sharp tusks, spikes, and mandibles.</p>
+                                <p>Whitespines are apex predators that live on Roshar. They are large, carapaced animals with sharp tusks and spikes.</p>
                                 <div class="card-button-layout">
-                                    <button class="card-button">Learn More</button>
+                                    <button class="card-button" aria-label="Learn more about Whitespine">Learn More</button>
                                 </div>
                             </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="card3">
             <div class="card-container">
                 <div class="product-cards">
                     <div class="card">
@@ -131,12 +133,14 @@
                                 <h3 class="card-title underline">THUNDERCLAST</h3>
                                 <p>Thunderclasts are enormous stone beasts, easily five or six times larger than a person, approximately 30 feet tall.</p>
                                 <div class="card-button-layout">
-                                    <button class="card-button">Learn More</button>
+                                    <button class="card-button" aria-label="Learn more about Thunderclast">Learn More</button>
                                 </div>
                             </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="card4">
             <div class="card-container">
                 <div class="product-cards">
                     <div class="card">
@@ -144,80 +148,155 @@
                             <img src="./chull.jpg" alt="Chull (Large crab like animal)"></div>
                             <div class="card-content">
                                 <h3 class="card-title underline">CHULL</h3>
-                                <p>Mature chulls are massive hexapodal crustaceans with thick legs with large claws and a stone-like shell. Their carapaces are typically red.</p>
+                                <p>Mature chulls are massive hexapodal crustaceans with thick legs with large claws and a stone-like shell. </p>
                                 <div class="card-button-layout">
-                                    <button class="card-button">Learn More</button>
+                                    <button class="card-button" aria-label="Learn more about Chull">Learn More</button>
                                 </div>
                             </div>
                     </div>
                 </div>
             </div>
-            
-
-        </section>
-
-        <!-- Youtube Video Section -->
-        <section>
+        </div>
+    </div>
+    <div class="">
+        <div  id="video">
             <div class="youtube-container gradient">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/tFSjj3jiTfo?si=lwGeMpexliwul4IV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <!-- General information -->
-        <section class="">
-            <div class="big-footer-container">
-                <div class="footer-container ">
-                    <div class="footer-section">
-                        <h1>Menu</h1>
-                            <ul> <!--SVG images with Moving elements-->
-                                <li class="flex flex-wrap hover:scale-110 transition-transform duration-75"><svg width="25" height="30" viewBox="0 0 100 50">
-                                    <polygon points="70,25 30,10 30,40" fill="black" class="arrow" />
-                                </svg>
-                                <!--Return to Top button-->
-                                <a href="#top">Return to top</a>
-                                <svg width="25" height="30" viewBox="0 0 100 50">
-                                    <polygon points="30,25 70,10 70,40" fill="black" class="arrow" />
-                                </svg></li>
-                                
-                                <li>Store</li>
-                                <li>Series</li>
-                            </ul>
-                    </div>
-                    <div class="footer-section">
-                        <h1>Support</h1>
-                            <ul>
-                                <li>Track your order</li>
-                                <li>Questions</li>
-                                <li>Shipping</li>
-                            </ul>
-                    </div>
-                    <div class="footer-section">
-                        <h1>Special Offers</h1>
-                            <ul>
-                                <li>Sales</li>
-                                <li>Bundles</li>
-                                <li>New Releases</li>
-                            </ul>
-                    </div>
-                    <!--Social Media Icons-->
-                    <div class="footer-section ">
-                        <h1>Connect with us</h1>
-                            <ul class="flex text-3xl gap-7 items-center">
-                                <i class="fa-brands fa-facebook"></i>
-                                <i class="fa-brands fa-instagram"></i>
-                                <i class="fa-brands fa-square-x-twitter"></i>
-                                <i class="fa-brands fa-tiktok"></i>
-                            </ul>
-                    </div>
+        </div>
+    </div>
+    <div class="grid-container">
+        <div class="flip-container radius">
+            <div class="flipper">
+                <div class="front">
+                    <img src="./herald.jpg" alt="Image 1">
+                </div>
+                <div class="back">
+                    <img src="./1.jpg" alt="Image 1 Back">
                 </div>
             </div>
-            <h1 class="flex justify-center gradient text-white"> &copy; 2025 The Knights Radiant </h1>
-        </section>
-    </footer>
+        </div>
+        <div class="flip-container radius">
+            <div class="flipper">
+                <div class="front">
+                    <img src="./axehound.jpg" alt="Image 2">
+                </div>
+                <div class="back">
+                    <img src="./2.jpg" alt="Image 2 Back">
+                </div>
+            </div>
+        </div>
+        <div class="flip-container radius">
+            <div class="flipper">
+                <div class="front">
+                    <img src="./truthwatcher.jpg" alt="Image 3">
+                </div>
+                <div class="back">
+                    <img src="./3.jpg" alt="Image 3 Back">
+                </div>
+            </div>
+        </div>
+        <div class="flip-container radius">
+            <div class="flipper">
+                <div class="front">
+                    <img src="./plants.jpg" alt="Image 4">
+                </div>
+                <div class="back">
+                    <img src="./4.jpg" alt="Image 4 Back">
+                </div>
+            </div>
+        </div>
+        <div class="flip-container radius">
+            <div class="flipper">
+                <div class="front">
+                    <img src="./shalebark.jpg" alt="Image 5">
+                </div>
+                <div class="back">
+                    <img src="./5.jpg" alt="Image 5 Back">
+                </div>
+            </div>
+        </div>
+        <div class="flip-container radius">
+            <div class="flipper">
+                <div class="front">
+                    <img src="./skyeel.jpg" alt="Image 6">
+                </div>
+                <div class="back">
+                    <img src="./6.jpg" alt="Image 6 Back">
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer-grid">
+        <div class="footer1">
+            <h1 class="font-bold">Menu</h1>
+            <ul> 
+                <li class="flex flex-wrap hover:scale-110 transition-transform duration-75">
+                <a href="#top" class="nav-link">Return to top</a>
+                
+                <li>Store</li>
+                <li class="nav-link"><a href="https://roshar.17thshard.com/#/en-US">Interactive Map</a></li>
+            </ul>
+        </div>
+        <div  class="footer2">
+            <h1 class="font-bold">Support</h1>
+            <ul>
+                <li>Track your order</li>
+                <li>Questions</li>
+                <li>Shipping</li>
+            </ul>
+        </div>
+        <div class="footer3">
+            <h1 class="font-bold">Special Offers</h1>
+            <ul>
+                <li>Sales</li>
+                <li>Bundles</li>
+                <li>New Releases</li>
+            </ul>
+        </div>
+        <div class="footer4">
+            <h1 id="connect" class="font-bold" >Connect with us</h1>
+            <ul class="flex text-3xl gap-7 items-center">
+                <li><a href="https://www.facebook.com/DragonsteelBooks/" aria-label="Facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/dragonsteelbooks/?hl=en" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram" ></i></a></li>
+                <li><a href="https://x.com/DragonsteelBook?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" aria-label="Twitter" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                <li><a href="https://www.tiktok.com/@dragonsteelbooks" aria-label="TikTok"  target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+            </ul>
+        </div>
+        </div>
+</footer>
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
 
-    
+    hamburger.addEventListener('click', () => {
+        const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+        hamburger.setAttribute('aria-expanded', !isExpanded);
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (event) => {
+        const isClickInsideMenu = navMenu.contains(event.target);
+        const isClickOnHamburger = hamburger.contains(event.target);
+
+        if (!isClickInsideMenu && !isClickOnHamburger && navMenu.classList.contains('active')) {
+            hamburger.setAttribute('aria-expanded', 'false');
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }
+    });
+</script>
+<!-- For flipping the cards -->
+<script> 
+    document.querySelectorAll('.flip-container').forEach(function(container) {
+    container.addEventListener('click', function() {
+        this.classList.toggle('flipped');
+    });
+});
+</script>
 </body>
 </html>
