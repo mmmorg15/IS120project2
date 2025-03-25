@@ -44,8 +44,8 @@ Required Tasks (up to 35 points)
 <!-- [10pts] Full mobile responsivity through media queries and flexible layouts
 to ensure the site looks good on mobile, tablet, and desktop viewports
 [8pts] Strategic use of CSS Grid for at least one major section of your page -->
-[7pts] Implementation of at least 2 CSS animations (transitions, keyframes,
-or transform properties) ()
+<!-- [7pts] Implementation of at least 2 CSS animations (transitions, keyframes,
+or transform properties) (flip cards, fade in, ) -->
 <!-- [5pts] Meet all requirements from the HTML Semantics Checklist found here -->
 <!-- [3pts] Create at least one accessible component (form, navigation, etc.)
 using ARIA roles and other accessibility best practices -->
@@ -60,12 +60,12 @@ menu on mobile devices -->
 <!-- [6pts] Two instances of using a tool or skill that was taught by your peers in
 our UTD presentations (3pts each) (Animista, Gradient) -->
 [5pts] Include a parallax scrolling effect
-[5pts] Implement auto-filling or auto-fitting grid layouts with
-grid-template-columns: repeat(auto-fill, minmax(size, 1fr))
+<!-- [5pts] Implement auto-filling or auto-fitting grid layouts with
+grid-template-columns: repeat(auto-fill, minmax(size, 1fr)) -->
 <!-- [4pts] Implement CSS Grid template areas for your page layout and use
 them to reorganize content at different breakpoints -->
-[4pts] Create and implement a dark mode toggle using CSS custom
-properties (variables)
+<!-- [4pts] Create and implement a dark mode toggle using CSS custom
+properties (variables) -->
 <!-- [2pts] Implement a "sticky" element that uses position: sticky -->
 [2pts] Use the CSS object-fit property to handle responsive images elegantly
 [2pts] Use CSS Grid's named lines feature to create a complex layout

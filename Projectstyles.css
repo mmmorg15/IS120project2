@@ -158,7 +158,7 @@ body {
         flex-direction: column;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
-        padding: 4rem 1rem 1rem 1rem;
+        padding: 1rem 1rem 1rem 1rem;
         gap: 2rem;
     }
 
@@ -167,6 +167,11 @@ body {
         transform: translateX(0);
         background: rgb(51,0,255);
         background: linear-gradient(0deg, rgba(51,0,255,1) 0%, rgba(25,24,50,1) 100%);
+        z-index: 1000000;
+        left: 50%; /* Start at 50% from the left */
+        right: 0; /* Extend to the right edge */
+        width: 50%; /* Ensure it’s enforced */
+        
     }
 
     .nav-links {
@@ -186,7 +191,7 @@ body {
     }
 }
 
-/* .nav-grid {
+/* .nav-grid 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
@@ -375,6 +380,7 @@ body {
                 .main6 { grid-area: 7 / 1 / 8 / 2; }
         }
 
+        
         
         .cinzel {
             font-family: "Cinzel", serif;
@@ -849,12 +855,98 @@ body {
 }
 
 .grid-container {
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    align-items: center;
+    gap: .75rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
-.grid-container img {
-width: 100%;
-height: auto;
+.flip-container {
+    perspective: 1000px; /* Sets up 3D space for the flip effect */
+    position: relative;
 }
+
+.flipper {
+    position: relative;
+    width: 100%;
+    transform-style: preserve-3d; /* Enables 3D transformations */
+    transition: transform 0.6s; /* Smooth transition for the flip */
+}
+
+.front, .back {
+    backface-visibility: hidden; /* Hides the back side when not facing forward */
+}
+
+.front {
+    width: 100%;
+}
+
+.front img {
+    width: 100%;
+    height: auto; /* Maintains aspect ratio based on grid width */
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg); /* Back side starts rotated 180 degrees */
+}
+
+.back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the back image fills the container */
+}
+
+.flip-container.flipped .flipper {
+    transform: rotateY(180deg); /* Rotates the flipper to show the back */
+}
+
+.radius {
+    border-radius: 10px; /* Assuming this was your original styling */
+    overflow: hidden; /* Prevents image overflow with rounded corners */
+}
+
+@media (max-width: 625px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: .5rem;
+    }
+}
+
+
+@keyframes fadeIn {
+from {
+    opacity: 0;
+    transform: translateY(20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+.fade-in {
+opacity: 0;
+animation: fadeIn 1s ease-out forwards;
+}
+
+/* Apply different delays to multiple elements */
+.fade-in-1 {
+animation-delay: 0.3s;
+}
+

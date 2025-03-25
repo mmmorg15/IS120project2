@@ -23,7 +23,7 @@
 
 
 </head>
-<body>
+<body class="fade-in">
     <header class="gradient sticky top-0 flex-1 z-[100000] text-white text-[1.3rem]" >
         <nav role="navigation">
             <div class="nav-grid gradient">
@@ -166,12 +166,66 @@
         </div>
     </div>
     <div class="grid-container">
-        <img src="./kaladin.jpg" alt="Image 1">
-        <img src="./kaladin.jpg" alt="Image 2">
-        <img src="./kaladin.jpg" alt="Image 3">
-        <img src="./kaladin.jpg" alt="Image 4">
-        <img src="./kaladin.jpg" alt="Image 5">
-        <img src="./kaladin.jpg" alt="Image 6">
+        <div class="flip-container radius">
+            <div class="flipper">
+                <div class="front">
+                    <img src="./herald.jpg" alt="Image 1">
+                </div>
+                <div class="back">
+                    <img src="./1.jpg" alt="Image 1 Back">
+                </div>
+            </div>
+        </div>
+        <div class="flip-container radius">
+            <div class="flipper">
+                <div class="front">
+                    <img src="./axehound.jpg" alt="Image 2">
+                </div>
+                <div class="back">
+                    <img src="./2.jpg" alt="Image 2 Back">
+                </div>
+            </div>
+        </div>
+        <div class="flip-container radius">
+            <div class="flipper">
+                <div class="front">
+                    <img src="./truthwatcher.jpg" alt="Image 3">
+                </div>
+                <div class="back">
+                    <img src="./3.jpg" alt="Image 3 Back">
+                </div>
+            </div>
+        </div>
+        <div class="flip-container radius">
+            <div class="flipper">
+                <div class="front">
+                    <img src="./plants.jpg" alt="Image 4">
+                </div>
+                <div class="back">
+                    <img src="./4.jpg" alt="Image 4 Back">
+                </div>
+            </div>
+        </div>
+        <div class="flip-container radius">
+            <div class="flipper">
+                <div class="front">
+                    <img src="./shalebark.jpg" alt="Image 5">
+                </div>
+                <div class="back">
+                    <img src="./5.jpg" alt="Image 5 Back">
+                </div>
+            </div>
+        </div>
+        <div class="flip-container radius">
+            <div class="flipper">
+                <div class="front">
+                    <img src="./skyeel.jpg" alt="Image 6">
+                </div>
+                <div class="back">
+                    <img src="./6.jpg" alt="Image 6 Back">
+                </div>
+            </div>
+        </div>
     </div>
 </main>
 <footer>
@@ -205,10 +259,10 @@
         <div class="footer4">
             <h1 id="connect" >Connect with us</h1>
             <ul class="flex text-3xl gap-7 items-center">
-                <li><a href="https://www.facebook.com/DragonsteelBooks/" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://www.instagram.com/dragonsteelbooks/?hl=en" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://x.com/DragonsteelBook?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" aria-label="Twitter"><i class="fa-brands fa-square-x-twitter"></i></a></li>
-                <li><a href="https://www.tiktok.com/@dragonsteelbooks" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href="https://www.facebook.com/DragonsteelBooks/" aria-label="Facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/dragonsteelbooks/?hl=en" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram" ></i></a></li>
+                <li><a href="https://x.com/DragonsteelBook?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" aria-label="Twitter" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+                <li><a href="https://www.tiktok.com/@dragonsteelbooks" aria-label="TikTok"  target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
             </ul>
         </div>
         </div>
@@ -235,6 +289,14 @@
             navMenu.classList.remove('active');
         }
     });
+</script>
+<!-- For flipping the cards -->
+<script> 
+    document.querySelectorAll('.flip-container').forEach(function(container) {
+    container.addEventListener('click', function() {
+        this.classList.toggle('flipped');
+    });
+});
 </script>
 </body>
 </html>
